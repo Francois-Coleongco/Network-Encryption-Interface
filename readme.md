@@ -12,13 +12,15 @@ copy header files into your own include directory.
 
 ```cp ./include/*.h <your include path>```
 
-Use the interface straight away! Documentation is within the header files, but it should be pretty straightforward :)
+Use the interface straight away! Documentation is within the header files.
+
+Send the `length`, then the `nonce`, then the encrypted `data`, as the `unwrap` expects that specific order.
 
 
 Building:
 
-compile the SessionEnc.cpp and encryption_utils.cpp into object files and put them in your build directory.
+Compile the SessionEnc.cpp and encryption_utils.cpp into object files and put them in your build directory.
 
 ```cp *.o <your build dir>```
 
-compile your program with the object files
+Compile your program with the object files, and you're all set :)
